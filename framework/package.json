@@ -14,7 +14,7 @@
   "main": "./dist/index.js",
   "exports": {
     ".": "./dist/index.js",
-    "./vite-plugin-ssr": "./dist/vite-plugin-ssr"
+    "./vite-plugin-ssr": "./dist/vite-plugin-ssr.js"
   },
   "dependencies": {
     "@types/react": "^17.0.39",
