@@ -2,7 +2,6 @@ import ReactDOMServer from 'react-dom/server'
 import React from 'react'
 import { PageWrapper } from './PageWrapper'
 import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr'
-import logoUrl from './logo.svg'
 
 export { render }
 // See https://vite-plugin-ssr.com/data-fetching
@@ -25,7 +24,7 @@ async function render(pageContext) {
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <link rel="icon" href="${logoUrl}" />
+        <link rel="icon" href="${pageContext.exports.favicon}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${desc}" />
         <title>${title}</title>
