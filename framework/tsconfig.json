@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/",
+    "strict": true,
+    "module": "CommonJS",
+    "target": "ES2017",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["vite/client", "react/next", "react-dom/next"],
+    "jsx": "react",
+    "skipLibCheck": true,
+    "esModuleInterop": true
+  }
+}
