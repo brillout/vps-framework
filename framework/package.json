@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "tsc --watch",
-    "build": "tsc"
+    "build": "rm -rf dist/ && tsc"
   },
   "peerDependencies": {
     "react": "^17.0.0",
