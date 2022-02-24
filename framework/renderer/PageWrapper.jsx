@@ -4,7 +4,7 @@ import React from "react";
 import { PageContextProvider } from "../utils/usePageContext";
 
 function PageWrapper({ pageContext, children }) {
-  const PageShell = pageContext.exportsPageShell || Passthrough;
+  const PageShell = pageContext.exports.PageShell || Passthrough;
   return (
     <React.StrictMode>
       <PageContextProvider pageContext={pageContext}>

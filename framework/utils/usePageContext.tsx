@@ -3,7 +3,8 @@ import React, { useContext } from 'react'
 export { PageContextProvider }
 export { usePageContext }
 
-const Context = React.createContext(undefined)
+// @ts-ignore
+const Context = globalThis.context = globalThis.context || React.createContext(undefined)
 
 function PageContextProvider({ pageContext, children }: any) {
   return <Context.Provider value={pageContext}>{children}</Context.Provider>
