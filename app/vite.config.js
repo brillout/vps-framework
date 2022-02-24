@@ -6,5 +6,8 @@ export default {
   plugins: [react(), ssr(framework)],
   ssr: {
     external: ['framework']
+  },
+  optimizeDeps: {
+    include: ['framework']
   }
 }
