@@ -1,7 +1,7 @@
 export { PageWrapper };
 
 import React from "react";
-import { PageContextProvider } from "./usePageContext";
+import { PageContextProvider } from "../utils/usePageContext";
 
 function PageWrapper({ pageContext, children }) {
   const PageShell = pageContext.exportsPageShell || Passthrough;

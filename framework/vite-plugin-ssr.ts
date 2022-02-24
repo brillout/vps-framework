@@ -1,5 +1,5 @@
-module.exports = {
+export default {
   pageFiles: {
-    include: ['node_modules/framework/'],
+    include: ["node_modules/framework/"],
   },
-}
+};

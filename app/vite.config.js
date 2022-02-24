@@ -4,9 +4,4 @@ import framework from 'framework/vite-plugin-ssr'
 
 export default {
   plugins: [react(), ssr(framework)],
-  /*
-  ssr: {
-    external: ['framework/vite-plugin-ssr']
-  }
-  */
 }
