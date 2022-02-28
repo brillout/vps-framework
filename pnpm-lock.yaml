@@ -22,6 +22,7 @@ importers:
 
   framework:
     specifiers:
+      '@types/node': ^17.0.21
       '@types/react': ^17.0.39
       '@types/react-dom': ^17.0.11
       typescript: ^4.5.5
@@ -29,6 +30,8 @@ importers:
       '@types/react': 17.0.39
       '@types/react-dom': 17.0.11
       typescript: 4.5.5
+    devDependencies:
+      '@types/node': 17.0.21
 
 packages:
 
@@ -352,6 +355,10 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.1
     dev: false
+
+  /@types/node/17.0.21:
+    resolution: {integrity: sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ==}
+    dev: true
 
   /@types/prop-types/15.7.4:
     resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
