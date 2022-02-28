@@ -1,6 +1,6 @@
 import ReactDOMServer from 'react-dom/server'
 import React from 'react'
-import { PageWrapper } from './PageWrapper'
+import { PageShell } from './PageShell'
 import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr'
 
 export { render }
@@ -10,9 +10,9 @@ export const passToClient = ['pageProps', 'urlPathname']
 async function render(pageContext: any) {
   const { Page, pageProps } = pageContext
   const pageHtml = ReactDOMServer.renderToString(
-    <PageWrapper pageContext={pageContext}>
+    <PageShell pageContext={pageContext}>
       <Page {...pageProps} />
-    </PageWrapper>,
+    </PageShell>,
   )
 
   // See https://vite-plugin-ssr.com/head

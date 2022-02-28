@@ -1,1 +1,1 @@
-export { PageShell } from './PageShell'
+export { LayoutDefault as PageLayout } from './LayoutDefault'

@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./PageShell.css";
+import "./LayoutDefault.css";
 import { Link } from "framework";
 
-export { PageShell };
+export { LayoutDefault };
 
-function PageShell({ children }) {
+function LayoutDefault({ children }) {
   return (
     <Layout>
       <Sidebar>

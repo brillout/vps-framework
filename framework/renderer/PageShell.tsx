@@ -1,14 +1,14 @@
-export { PageWrapper };
+export { PageShell };
 
 import React from "react";
 import { PageContextProvider } from "../hooks/usePageContext";
 
-function PageWrapper({ pageContext, children }) {
-  const PageShell = pageContext.exports.PageShell || Passthrough;
+function PageShell({ pageContext, children }) {
+  const PageLayout = pageContext.exports.PageLayout || Passthrough;
   return (
     <React.StrictMode>
       <PageContextProvider pageContext={pageContext}>
-        <PageShell>{children}</PageShell>
+        <PageLayout>{children}</PageLayout>
       </PageContextProvider>
     </React.StrictMode>
   );
