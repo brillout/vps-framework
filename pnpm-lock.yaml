@@ -4,28 +4,29 @@ importers:
 
   app:
     specifiers:
-      '@vitejs/plugin-react': ^1.2.0
-      express: ^4.17.3
       framework: 0.0.0
       react: ^17.0.2
       react-dom: ^17.0.2
-      vite: ^2.8.4
-      vite-plugin-ssr: ^0.3.60-beta.4
     dependencies:
-      '@vitejs/plugin-react': 1.2.0
-      express: 4.17.3
       framework: link:../framework
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-      vite: 2.8.4
-      vite-plugin-ssr: 0.3.60-beta.4_vite@2.8.4
 
   framework:
     specifiers:
       '@types/node': ^17.0.21
       '@types/react': ^17.0.39
       '@types/react-dom': ^17.0.11
+      '@vitejs/plugin-react': ^1.2.0
+      express: ^4.17.3
       typescript: ^4.5.5
+      vite: ^2.8.4
+      vite-plugin-ssr: ^0.3.60-beta.4
+    dependencies:
+      '@vitejs/plugin-react': 1.2.0
+      express: 4.17.3
+      vite: 2.8.4
+      vite-plugin-ssr: 0.3.60-beta.4_vite@2.8.4
     devDependencies:
       '@types/node': 17.0.21
       '@types/react': 17.0.39
