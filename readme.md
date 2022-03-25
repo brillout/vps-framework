@@ -4,8 +4,9 @@ To run it:
 
 ```bash
 git clone git@github.com:brillout/vps-framework
-cd app/
+cd vps-framework/
 pnpm install # https://pnpm.io/
+cd app/
 pnpm run dev
 ```
 
